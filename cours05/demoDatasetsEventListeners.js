@@ -75,7 +75,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     clickCounterBtn.addEventListener("click", augmenterCompteur);
+<<<<<<< Updated upstream
     // Retirer un événement
     //clickCounterBtn.removeEventListener('click', augmenterCompteur);
+=======
+    //Retirer un evenement
+    //clickCounterBtn.removeEventListener('click', augmenterCompteur);
+
+>>>>>>> Stashed changes
 
 });

@@ -6,6 +6,8 @@
 let pEntete = document.querySelector('header p'); // Cibler le paragraphe de l'entête (<header>)
 // Remplacer le contenu texte de l'élément
 pEntete.textContent = "Nouveau SUPER sous-titre";
+console.log(pEntete.textContent); //
+console.log(pEntete.innerText); //
 // Ajouter un attribut (ici le id)
 //pEntete.id = "pEntete"; // une façon
 pEntete.setAttribute('id', 'pEntete'); // une autre façon, avec .setAttribute(nomAttribut, valeurAttribut)
@@ -45,7 +47,8 @@ nouveauLI.classList.add("text-warning", 'bg-success');
 //document.querySelector('ol').prepend(nouveauLI); // ajoute au début
 // Si on avait voulu insérer le li entre le 2e et le 3e
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement
-document.querySelectorAll('ol li').item(1).insertAdjacentElement('afterend', nouveauLI) // afterend ajoute 'nouveauLI' APRÈS l'élément ciblé, qui est le 2e <li> de la <ol>
+//document.querySelectorAll('ol li').item(1).insertAdjacentElement('afterend', nouveauLI) // afterend ajoute 'nouveauLI' APRÈS l'élément ciblé, qui est le 2e <li> de la <ol>
+
 
 // Suppression d'un element
 // 1. Cibler l'élément
